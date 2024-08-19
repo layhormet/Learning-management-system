@@ -28,17 +28,46 @@ export default {
 .banner {
   background-image: url("@/assets/image 2.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: 100% 100%;
-  padding: 16.45rem;
+  margin-top: 75px;
+  height: 715px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 19rem;
   color: white;
   text-align: center;
 }
-.search-input-banner{
-  padding: 15px;
+.search-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 0px;
+  margin-top: 15px;
+  width: 500px;
+  padding: 5px 15px;
+  background-color: white;
   border-radius: 30px;
-  width: 50%;
+}
+.search-input-banner{
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: #888;
+  transition: 0.3s;
 
 }
- 
-
+.search-box i{
+  background-color: white;
+  color: #888;
+  cursor: pointer;
+}
+.search-box i:hover{
+  color: #3B53A4;
+  transition: 0.3s;
+  scale: 1.1;
+}
 </style>
