@@ -2,11 +2,7 @@
   <NavBar />
   <div class="container">
     <div class="sidebar">
-      <div
-        class="dropdown"
-        v-for="(item, index) in sidebarItems"
-        :key="index"
-      >
+      <div class="dropdown" v-for="(item, index) in sidebarItems" :key="index">
         <div class="dropdown-header" @click="toggleDropdown(index)">
           <span>{{ item.title }}</span>
           <i class="fa fa-caret-down"></i>
@@ -37,21 +33,16 @@
 &lt;/html&gt;
             </code>
           </pre>
-          <div
-            v-else
-            contenteditable="true"
-            ref="editableCode"
-            class="editable-code"
-          >
-&lt;html&gt;<br>
-&lt;head&gt;<br>
-  &lt;title&gt;Page Title&lt;/title&gt;<br>
-&lt;/head&gt;<br>
-&lt;body&gt;<br>
-  &lt;h1&gt;This is a Heading&lt;/h1&gt;<br>
-  &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
-&lt;/body&gt;<br>
-&lt;/html&gt;
+          <div v-else contenteditable="true" ref="editableCode" class="editable-code">
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;title&gt;Page Title&lt;/title&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h1&gt;This is a Heading&lt;/h1&gt;<br>
+            &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
           </div>
           <button @click="makeEditable">Try yourself</button>
         </div>
@@ -161,7 +152,8 @@ export default {
 .editable-code {
   white-space: pre-wrap;
   font-family: monospace;
-  outline: none; /* Remove outline when editing */
+  outline: none;
+  /* Remove outline when editing */
 }
 
 button {
