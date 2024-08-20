@@ -1,14 +1,11 @@
 <template>
   <nav class="navbar">
     <div class="container">
-      <h1 style="
-            font-size: 40px;
-            font-style: italic;
-            font-weight: 800;
-          ">
-        <span style="color: black;">LM</span>
-        <span style="color: #3b53a4;">S</span>
-      </h1>
+      
+      <div class="logo d-flex" style="gap: 15px;">
+        <img src="../assets/image 17 (1).png" alt="">
+        <h3>Vectorasoft</h3>
+      </div>
       <ul>
         <li><router-link to="/"></router-link></li>
         <li><router-link to="/coursce">Courses</router-link></li>
@@ -16,8 +13,8 @@
         <li><router-link to="/test">Test</router-link></li>
       </ul>
       <div class="search-container">
-        <input type="text" class="search-input" placeholder="Search...">
-        <i class="fas fa-search"></i>
+        <input type="text" class="search-input" placeholder="Search.....">
+        <!-- <i class="fas fa-search"></i> -->
       </div>
     </div>
   </nav>
@@ -38,7 +35,7 @@
   
 }
 nav {
-  background-color: white;
+  background-color: rgba(248, 255, 255, 0.986);
 }
 
 nav a {

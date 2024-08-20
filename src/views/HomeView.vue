@@ -2,10 +2,10 @@
   <NavBar/>
   <div class="home">
     <section class="banner">
-      <h1>Welcome to Over Learning Code</h1>
+      <h1>Welcome to Our Learning Code</h1>
       <div class="search-box" >
         <input type="text" class="search-input-banner" placeholder="Search..." >
-        <i class="fas fa-search"></i>
+        <!-- <i class="fas fa-search"></i> -->
       </div>
     </section>
   
@@ -29,7 +29,7 @@ export default {
   background-image: url("@/assets/image 2.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 16.45rem;
+  padding: 20rem;
   color: white;
   text-align: center;
 }

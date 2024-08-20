@@ -3,56 +3,112 @@
   <div class="courses">
     <div class="side-bar">
       <aside id="sidebar" class="sidebar">
-      <ul class="sidebar-nav" id="sidebar-nav">
-      <div class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>JAVASCRIPT</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>Alerts</span>
+        <ul class="sidebar-nav" id="sidebar-nav">
+          <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+              <span>JAVASCRIPT</span><i class="bi bi-chevron-down"></i>
             </a>
+            <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+              <li>
+                <router-link to="#">
+                    <span>JavaScript Syntax</span>
+                </router-link>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>Alerts</span>
+
+          <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+              <span>NODE.JS</span><i class="bi bi-chevron-down"></i>
             </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>Alerts</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>Alerts</span>
-            </a>
+            <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+              <li v-for="i in 21" :key="i" @click="handleClick(i)">
+                <router-link to="/">
+                  <span>Alerts {{ i }}</span>
+                </router-link>
+              </li>
+            </ul>
           </li>
         </ul>
-      </div>
-
-      <div class="nav-item-2">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>Alerts</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      </ul>
-    </aside>
-    </div>
-    <div class="right-side">
-      <h1>hello</h1>
-    </div>
-    <div class="container">
+      </aside>
     </div>
 
+    <div class="right-side" style="display: flex;flex-wrap: wrap;">
+      <div class="title">
+        <h3>JavaScript Syntax</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quod. Placeat sint, adipisci tenetur magni
+          sit non ab. Fuga neque eveniet perferendis dolore facilis dolores voluptatibus atque recusandae rem porro!</P>
+        <hr>
+      </div>
+      <div class="title">
+        <h3>JAVASCRIPT</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quod. Placeat sint, adipisci tenetur magni
+          sit non ab. Fuga neque eveniet perferendis dolore facilis dolores voluptatibus atque recusandae rem porro!</P>
+        <hr>
+      </div>
+      <div class="title">
+        <h3>JAVASCRIPT</h3>
+        <div class="card" style="background-color: antiquewhite; padding: 30px; height: 70vh;">
+
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quod. Placeat sint, adipisci tenetur magni
+            sit non ab. Fuga neque eveniet perferendis dolore facilis dolores voluptatibus atque recusandae rem porro!</P>
+            <div class="card-Ex">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis temporibus officia, ducimus consectetur repudiandae eligendi magni cum dolorem enim earum accusantium ullam laudantium ipsa sequi suscipit dolores eum minima. Magni.</p>
+              
+            </div>
+          </div>
+          <hr>
+      </div>
+      <div class="title">
+        <h3>JAVASCRIPT</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quod. Placeat sint, adipisci tenetur magni
+          sit non ab. Fuga neque eveniet perferendis dolore facilis dolores voluptatibus atque recusandae rem porro!</P>
+        <hr>
+      </div>
+      <div class="title">
+        <h3>JAVASCRIPT</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quod. Placeat sint, adipisci tenetur magni
+          sit non ab. Fuga neque eveniet perferendis dolore facilis dolores voluptatibus atque recusandae rem porro!</P>
+        <hr>
+      </div>
+      <div class="title">
+        <h3>JAVASCRIPT</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quod. Placeat sint, adipisci tenetur magni
+          sit non ab. Fuga neque eveniet perferendis dolore facilis dolores voluptatibus atque recusandae rem porro!</P>
+        <hr>
+      </div>
+      <div class="title">
+        <h3>JAVASCRIPT</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quod. Placeat sint, adipisci tenetur magni
+          sit non ab. Fuga neque eveniet perferendis dolore facilis dolores voluptatibus atque recusandae rem porro!</P>
+        <hr>
+      </div>
+      <div class="title">
+        <h3>JAVASCRIPT</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quod. Placeat sint, adipisci tenetur magni
+          sit non ab. Fuga neque eveniet perferendis dolore facilis dolores voluptatibus atque recusandae rem porro!</P>
+        <hr>
+      </div>
+      <div class="title">
+        <h3>JAVASCRIPT</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quod. Placeat sint, adipisci tenetur magni
+          sit non ab. Fuga neque eveniet perferendis dolore facilis dolores voluptatibus atque recusandae rem porro!</P>
+        <hr>
+      </div>
+      <div class="title">
+        <h3>JAVASCRIPT</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quod. Placeat sint, adipisci tenetur magni
+          sit non ab. Fuga neque eveniet perferendis dolore facilis dolores voluptatibus atque recusandae rem porro!</P>
+        <hr>
+      </div>
+      <div class="title">
+        <h3>JAVASCRIPT</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quod. Placeat sint, adipisci tenetur magni
+          sit non ab. Fuga neque eveniet perferendis dolore facilis dolores voluptatibus atque recusandae rem porro!</P>
+        <hr>
+      </div>
+      
+    </div>
   </div>
 </template>
 
@@ -63,21 +119,26 @@ export default {
   name: 'CoursesView',
   components: {
     NavBar
+  },
+  methods: {
+    handleClick(index) {
+      console.log(`Clicked on Alerts ${index}`);
+    }
   }
+ 
 }
 </script>
 
 <style>
 .courses {
   margin-top: 70px;
- 
   display: flex;
   height: calc(100vh - 70px);
-  background-color: rgb(238, 252, 252);
+  background-color: white;
 }
 
 .side-bar {
-  background-color:  rgb(244, 253, 253);
+  background-color: rgb(255, 250, 250);
   width: 25%;
   height: 100%;
   overflow-y: auto;
@@ -99,5 +160,11 @@ export default {
 
 .side-bar::-webkit-scrollbar-thumb:hover {
   background-color: #555;
+}
+
+.right-side {
+  width: 75%;
+  padding: 30px;
+  overflow-y: auto;
 }
 </style>
