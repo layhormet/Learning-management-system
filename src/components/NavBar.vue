@@ -34,6 +34,10 @@
 <style scoped>
 .navbar {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   width: 100%;
   z-index: 1000;top: 0;
   
@@ -63,11 +67,17 @@ li {
 a {
   color: black;
 }
+.container{
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+}
 .search-container{
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-right: 0px;
+  margin-top: -7px;
   width: 350px;
   padding: 3px 10px;
   background-color: white;
