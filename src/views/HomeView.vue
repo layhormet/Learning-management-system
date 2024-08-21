@@ -2,7 +2,7 @@
   <NavBar/>
   <div class="home">
     <section class="banner">
-      <h1>Welcome to Over Learning Code</h1>
+      <h1>Welcome to Our Learning Code</h1>
       <div class="search-box" >
         <input type="text" class="search-input-banner" placeholder="Search..." >
         <i class="fas fa-search"></i>
@@ -36,6 +36,7 @@ export default {
   align-items: center;
   flex-direction: column;
   padding: 19rem;
+  padding: 20rem;
   color: white;
   text-align: center;
 }
