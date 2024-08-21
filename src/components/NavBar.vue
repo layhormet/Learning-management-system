@@ -4,7 +4,7 @@
       
       <div class="logo d-flex" style="gap: 15px;">
         <img src="../assets/image 17 (1).png" alt="">
-        <h3>Vectorasoft</h3>
+        <!-- <h4>Vectorasoft</h4> -->
       </div>
       <ul>
         <li><router-link to="/"></router-link></li>
@@ -14,7 +14,6 @@
       </ul>
       <div class="search-container">
         <input type="text" class="search-input" placeholder="Search.....">
-        <!-- <i class="fas fa-search"></i> -->
       </div>
     </div>
   </nav>
