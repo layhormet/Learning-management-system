@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import Courscesview from '@/views/Courscesview.vue'
 import ExcericesView from '@/views/ExcericesView.vue'
 import TestView from '@/views/TestView.vue'
+import DashboardView from '@/views/Admin/DashboardView.vue'
 
 const routes = [
   {
@@ -25,6 +26,27 @@ const routes = [
     name: 'test',
     component: TestView
   },
+  {
+    path: '/admin',
+    component: DashboardView,
+    children: [
+      {
+        path: '/',
+        name: 'dashboard',
+        component: () => import('@/views/Admin/DashboardView.vue')
+      },
+      {
+        path: 'courses',
+        name: 'courses',
+        // component: () => import('@/views/Admin/CoursesView.vue')
+      },
+      {
+        path: 'tests',
+        name: 'tests',
+        // component: () => import('@/views/Admin/TestsView.vue')
+      }
+    ]
+  }
  
 ]
 
