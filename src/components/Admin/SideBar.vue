@@ -39,7 +39,9 @@
         @click="toggleMenu('notification')"
       >
         <i class="fa fa-bell"></i>
-        <span v-show="!collapsed || activeMenu === 'notification'">NOTIFICATIONS</span>
+        <span v-show="!collapsed || activeMenu === 'notification'"
+          >NOTIFICATIONS</span
+        >
       </div>
     </div>
     <div class="sidebar_bottom" @click="toggleSidebar">
