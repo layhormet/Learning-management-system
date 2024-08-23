@@ -191,6 +191,7 @@ export default {
   width: 100%;
   height: 500px;
   padding: 0px;
+  gap: 2.34rem;
   overflow-y: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;

@@ -1,48 +1,51 @@
 <template>
   <div :class="['sidebar', { collapsed }]">
     <div class="sidebar_top">
-      <div
+      <router-link
+        to="/admin"
         class="dashboard"
         :class="{ active: activeMenu === 'dashboard' }"
         @click="toggleMenu('dashboard')"
       >
         <i class="fa fa-dashboard"></i>
         <span v-show="!collapsed || activeMenu === 'dashboard'">DASHBOARD</span>
-      </div>
-      <div
+      </router-link>
+      <router-link
+        to="/admin/courses"
         class="course"
         :class="{ active: activeMenu === 'course' }"
         @click="toggleMenu('course')"
       >
         <i class="fa fa-book"></i>
         <span v-show="!collapsed || activeMenu === 'course'">COURSES</span>
-      </div>
-      <div
+      </router-link>
+      <router-link
+        to="/admin/exercises"
         class="exercise"
         :class="{ active: activeMenu === 'exercise' }"
         @click="toggleMenu('exercise')"
       >
         <i class="fa fa-pencil"></i>
         <span v-show="!collapsed || activeMenu === 'exercise'">EXERCISES</span>
-      </div>
-      <div
+      </router-link>
+      <router-link
+        to="/admin/users"
         class="users"
         :class="{ active: activeMenu === 'users' }"
         @click="toggleMenu('users')"
       >
         <i class="fa fa-users"></i>
         <span v-show="!collapsed || activeMenu === 'users'">USERS</span>
-      </div>
-      <div
+      </router-link>
+      <router-link
+        to="/admin/notifications"
         class="notification"
         :class="{ active: activeMenu === 'notification' }"
         @click="toggleMenu('notification')"
       >
         <i class="fa fa-bell"></i>
-        <span v-show="!collapsed || activeMenu === 'notification'"
-          >NOTIFICATIONS</span
-        >
-      </div>
+        <span v-show="!collapsed || activeMenu === 'notification'">NOTIFICATIONS</span>
+      </router-link>
     </div>
     <div class="sidebar_bottom" @click="toggleSidebar">
       <i class="fa fa-arrow-left back-icon"></i>
@@ -62,13 +65,13 @@ export default {
   },
   methods: {
     toggleSidebar() {
-      if (!this.collapsed) {
+      this.collapsed = !this.collapsed;
+      if (this.collapsed) {
         this.activeMenu = null; // Reset activeMenu when collapsing the sidebar
       }
-      this.collapsed = !this.collapsed;
     },
     toggleMenu(menu) {
-      if (this.activeMenu === menu) {
+      if (this.activeMenu === menu && !this.collapsed) {
         this.activeMenu = null; // Hide all text spans
         this.collapsed = true; // Collapse the sidebar
       } else {
