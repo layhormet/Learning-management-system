@@ -41,6 +41,11 @@ const routes = [
     path: "/admin/exercises",
     name: "admin_exercises",
     component: () => import('@/views/Admin/ExercisesView.vue')
+  },
+  {
+    path: "/admin/users",
+    name: "admin_users",
+    component: () => import('@/views/Admin/UsersView.vue')
   }
 
 ];
