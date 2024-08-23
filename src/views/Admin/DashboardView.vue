@@ -280,6 +280,8 @@ export default {
   background-color: #ffffff;
   border-radius: 20px;
   margin-top: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.56);
+
 }
 
 .recently_update {
@@ -297,6 +299,8 @@ export default {
   height: 500px;
   background-color: #ffffff;
   border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.56);
+
 }
 .update_card {
   display: flex;
@@ -307,7 +311,6 @@ export default {
   width: 100%;
   height: auto;
   border-radius: 20px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.56); */
 }
 
 .update_card img {

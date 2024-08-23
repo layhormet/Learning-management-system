@@ -260,6 +260,7 @@ export default {
   color: #fff;
   border: none;
   border-radius: 30px;
+  width: 200px;
   padding: 10px 20px;
   cursor: pointer;
   font-weight: bold;
