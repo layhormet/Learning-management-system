@@ -46,6 +46,11 @@ const routes = [
     path: "/admin/users",
     name: "admin_users",
     component: () => import('@/views/Admin/UsersView.vue')
+  },
+  {
+    path: "/admin/notifications",
+    name: "admin_notifications",
+    component: () => import('@/views/Admin/NotificationView.vue')
   }
 
 ];
