@@ -3,6 +3,9 @@ import HomeView from '../views/HomeView.vue'
 import Courscesview from '@/views/Courscesview.vue'
 import ExcericesView from '@/views/ExcericesView.vue'
 import TestView from '@/views/TestView.vue'
+import PythonExcericesView from '@/views/PythonExcericesView.vue'
+import TryExcericeView from '@/views/TryExcericeView.vue'
+import AngularExcericeView from '@/views/AngularExcericeView.vue'
 
 const routes = [
   {
@@ -16,7 +19,7 @@ const routes = [
     component: Courscesview
   },
   {
-    path: '/exercises',
+    path: '/exerices',
     name: 'exercises',
     component: ExcericesView
   },
@@ -24,6 +27,21 @@ const routes = [
     path: '/test',
     name: 'test',
     component: TestView
+  },
+  {
+    path: '/python-excerice',
+    name: 'python-excerice',
+    component: PythonExcericesView
+  },
+  {
+    path: '/angular-excerice',
+    name: 'angular-excerice',
+    component: AngularExcericeView
+  },
+  {
+    path: '/do-excerice',
+    name: 'do-excerice',
+    component: TryExcericeView
   },
  
  

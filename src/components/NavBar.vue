@@ -9,7 +9,7 @@
       <ul>
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/coursce">Courses</router-link></li>
-        <li><router-link to="/exercises">Exercises</router-link></li>
+        <li><router-link to="/exerices">Exercises</router-link></li>
         <li><router-link to="/test">Test</router-link></li>
       </ul>
       <div class="search-container">
@@ -35,10 +35,9 @@
   align-items: center;
   width: 100%;
   z-index: 1000;top: 0;
-  
 }
 nav {
-  background-color: rgba(248, 255, 255, 0.986);
+  background-color: #00095B;
 }
 
 nav a {
@@ -46,11 +45,11 @@ nav a {
 }
 
 nav a:hover {
-  color: #3B53A4;
+  color: rgb(223, 202, 12);
 }
 nav a.router-link-active {
   font-weight: 2px;
-  color: #3B53A4;
+  color: rgb(247, 247, 36);
 }
 
 
@@ -60,7 +59,7 @@ li {
 }
 
 a {
-  color: black;
+  color: white;
 }
 .container{
   display: flex;
@@ -76,7 +75,7 @@ a {
   width: 350px;
   padding: 3px 10px;
   background-color: white;
-  border: 1px solid rgb(51, 121, 0);
+  border: 1px solid rgb(236, 78, 4);
   border-radius: 30px;
 }
 .search-input{
