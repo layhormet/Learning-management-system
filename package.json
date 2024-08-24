@@ -8,10 +8,16 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/vue3": "^6.1.15",
+    "@syncfusion/ej2-vue-charts": "^26.2.10",
     "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.4",
+    "chat.js": "^1.0.2",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
-    "vue-router": "^4.0.3"
+    "vue-chartjs": "^5.3.1",
+    "vue-router": "^4.4.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

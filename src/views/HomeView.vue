@@ -26,7 +26,7 @@ export default {
 
 <style>
 .banner {
-  background-image: url("@/assets/image 2.png");
+  background-image: url("@/assets/home.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
